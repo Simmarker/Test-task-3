@@ -2,9 +2,6 @@
 
 class Parser
 {
-    /**
-     * Приватное свойство, тут лежит информация о полученной странице. Эта инфа нигде и никогда не нужна, кроме как в этом классе
-     */
     private $parserData = [];
 
     public static function getPage($url)
@@ -52,6 +49,5 @@ class Parser
 
 $parser = Parser::getPage('https://google.com/'); // вернет массив данных
 $arrTag = $parser->getTag(); // вернет ассоциативный массив значений
-
 
 echo "<pre>". print_r($arrTag, true) . "</pre>";
