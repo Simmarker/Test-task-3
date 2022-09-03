@@ -4,7 +4,6 @@ class Parser
 {
     /**
      * Приватное свойство, тут лежит информация о полученной странице. Эта инфа нигде и никогда не нужна, кроме как в этом классе
-
      */
     private $parserData = [];
 
@@ -27,9 +26,6 @@ class Parser
         return $parser;
     }
 
-    /**
-     * @return array
-     */
     public function getTag()
     {
         // регулярные выражения для парсинга
